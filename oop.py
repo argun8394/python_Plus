@@ -82,3 +82,30 @@ class Person:
 # person1 = Person()
 # person1.set_details('Rafe', 39, 'Istanbul')
 # person1.salute()
+
+
+# # Special Methods
+# class Person:
+#     company = 'Clarusway'
+
+#     def __init__(self, name, age):
+#         self.name = name
+#         self.age = age
+
+#     def __str__(self):
+#         return f"Name: {self.name}     Age: {self.age}"
+
+#     def __len__(self):
+#         return self.age
+
+
+# person1 = Person('Barry', 44)
+# # print(person1.name, person1.age)
+
+# # person2 = Person('Rafe', 39)
+# # print(person2.name, person2.age)
+
+# lst = [1, 2, 3]
+# print(len(lst))
+# print(len(person1))
+# print(person1.__len__())
