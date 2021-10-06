@@ -178,3 +178,47 @@ class Person:
 # # print(emp1)
 # emp1.details()
 # print(Employee.mro())
+
+# # inner class
+
+# class Article(models.Model):
+#     first_name = models.CharField(max_length=30)
+#     last_name = models.CharField(max_length=30)
+
+#     class Meta:
+#         ordering = ["last_name"]
+
+class Customer:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+        self.__id = 1234
+        self.movements = []
+
+    def __str__(self):
+        return f"Name : {self.name} Id: {self.__id}"
+
+    def add_movement(self, amount, date, explain):
+        self.movements.append(
+            {'amount': amount, 'date': date, 'explain': explain})
+
+    def all_movements(self):
+        for i in self.movements:
+            print(i["date"], i["amount"], i["explain"])
+
+    def balance(self):
+        return sum(i['amount'] for i in self.movements)
+        # total = 0
+        # for i in self.movements:
+        #     total += i["amount"]
+        # print(total)
+
+
+custom = Customer('barry', 44)
+print(custom)
+custom.add_movement(5000, '15.10.2021', 'Salary')
+custom.add_movement(-1000, '16.10.2021', 'Rent')
+custom.add_movement(-500, '16.10.2021', 'Bills')
+custom.add_movement(-2000, '16.10.2021', 'Credit Card')
+custom.all_movements()
+print(custom.balance())
