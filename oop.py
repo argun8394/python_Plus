@@ -60,3 +60,25 @@ person1.test()
 Person.test(person1)
 person1.set_details("Henry", 37, "Ankara")
 person1.get_details()
+
+class Person:
+#     name = 'Barry'
+#     age = 44
+
+#     def get_details(self):
+#         print('name: ', self.name, 'age', self.age, 'location :', self.location)
+
+#     def set_details(self, name, age, location):
+#         self.name = name
+#         self.age = age
+#         self.location = location
+
+#     @staticmethod
+#     def salute():
+#         print('Hi There! ', Person.name)
+
+
+# Person.salute()
+# person1 = Person()
+# person1.set_details('Rafe', 39, 'Istanbul')
+# person1.salute()
