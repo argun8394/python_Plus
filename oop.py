@@ -134,3 +134,47 @@ class Person:
 # print(person1.__id1)
 # person1._Person__id1 = 3000
 # print(person1._Person__id1)
+
+
+# # inheritance and polymorphism
+# class Person:
+#     company = 'Clarusway'
+
+#     def __init__(self, name, age):
+#         self.name = name
+#         self.age = age
+
+#     def __str__(self):
+#         return f"Name: {self.name}     Age: {self.age}"
+
+#     def details(self):
+#         print(f"Name: {self.name}\nAge: {self.age}")
+
+
+# class Lang:
+#     def __init__(self, langs):
+#         self.langs = langs
+
+
+# class Employee(Person, Lang):
+#     def __init__(self, name, age, path):
+#         # self.name = name
+#         # self.age = age
+#         super().__init__(name, age)
+#         Lang.__init__(self, ['Python', 'Js'])
+#         self.path = path
+
+#     def __str__(self):
+#         return f"Name: {self.name}     Age: {self.age}      Path: {self.path}"
+#     # override
+
+#     def details(self):
+#         super().details()
+#         print(f"Path: {self.path}")
+#         print(f"Langs: {self.langs}")
+
+
+# emp1 = Employee('Barry', 44, 'FS')
+# # print(emp1)
+# emp1.details()
+# print(Employee.mro())
