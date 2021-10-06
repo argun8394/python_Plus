@@ -109,3 +109,28 @@ class Person:
 # print(len(lst))
 # print(len(person1))
 # print(person1.__len__())
+
+# abstraction and encapsulation
+
+# lst = [3, 2, 5, 9, 1]
+# lst.sort()
+# print(lst)
+
+# class Person:
+#     company = 'Clarusway'
+
+#     def __init__(self, name, age):
+#         self.name = name
+#         self.age = age
+#         self._id = 5000
+#         self.__id1 = 4000
+
+#     def __str__(self):
+#         return f"Name: {self.name}     Age: {self.age}"
+
+
+# person1 = Person('rafe', 39)
+# # person1.__id1 = 8000
+# print(person1.__id1)
+# person1._Person__id1 = 3000
+# print(person1._Person__id1)
